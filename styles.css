@@ -2,6 +2,151 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: ghostwhite;
+    /*color:black;*/
+    /*background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    */
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    /*color: black;*/
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+/*--------------------CAMBIOS PARTICULARES----------------*/
+
+/* Aquí vamos a cambiar los estilos de navegación */
+
+.encabezado{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: #d62828;
+    font-size: 20px;
+    box-shadow: 0 4px 25px -22px black;
+    height: 60px;
+}
+
+.head-content{
+    /*max-width: 1200px;*/
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*SECCION LOGO*/
+.logo {
+    height: 60px;
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
+.logo a {
+    margin: 13px 0 10% 5%;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+/*LOGO*/
+.nav-brand { 
+    width: 80px;
+}
+
+.menu {
+    height: 60px;
+}
+
+.menu nav {
+    height: 100%;
+}
+
+.menu nav ul {
+    height: 100%;
+    display: flex;
+}
+
+.menu nav ul li{
+    height: 100%;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*
+.nav-main ul {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: #d62828;
+    font-size: 20px;
+    box-shadow: 0 4px 25px -22px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    /*padding: 20px 0;
+}*/
+
+
+
+/* Navegation Left 
+.nav-main{
+    height: 60px;
+    display: flex;
+    
+}
+/*
+.nav-main ul {
+    height: 100%;
+    display: flex;
+}
+
+.nav-main ul li {
+    height: 100%;
+    padding: 9px;
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;  
+}
+*/
+.head-content ul li a {
+    color: ghostwhite;
+    padding: 2px;
+}
+
+.head-content ul li a:hover {
+    border-bottom: 2px solid ghostwhite;
+}
+/*
+.nav-main ul.nav-menu {
+    flex: 1;
+    padding-top: 6px;
+    margin-left: 17%;
+}*/
+
+.head-content .nav-menu-right {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
 }
 
 /*Cita*/
@@ -12,77 +157,12 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    
 }
 
-body {
-
-    background: #f8f8ff;
-    color:black;
-
-    /*background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
-    */
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-.container {
-    width: 90%;
-    margin: auto;
-    margin-top: 0.5%;
-}
-
-/* Aquí vamos a cambiar los estilos de navegación */
-
-.nav-main {
-
-    font-size: 22px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    padding: 20px 0;
-
-}
-
-.nav-brand {
-    margin-top: 30px;
-    width: 150px;
-}
-
-/* Navegation Left */
-.nav-main ul {
-    display: flex;
-}
-.nav-main ul li {
-    padding: 10px;
-
-}
-.nav-main ul li a {
-    padding: 2px;
-}
-
-.nav-main ul li a:hover {
-    border-bottom: 2px solid #000000;
-
-}
-
-.nav-main ul.nav-menu {
-    flex: 1;
-    margin-left: 20px;
-
-}
+/*----------------------------------------------------------------------------------------*/
 /*SHOW CASE*/
 .showcase {
+    margin-top: 10px;
     width: 100%;
     color: black;
     height: 500px;
@@ -124,10 +204,12 @@ ul {
 
 /* ARTICULOS CARD */
 .art-cards {
+    width: 90%;
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 25px;
-    margin: 10px 0;
+    margin: auto;
 
 }
 .art-cards img {
@@ -193,11 +275,16 @@ ul {
 }
 
 /*REDES*/
+.social .links a {    
+    color: black;
+}
 
-.social {
+.social {    
+    color: black;
     margin: 50px;
 }
 .social p {
+    color: black;
     text-align: center;
     font-size: 30px;
     margin-bottom: 20px;
